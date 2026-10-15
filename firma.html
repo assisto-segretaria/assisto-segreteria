@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Firma email | Assisto</title>
+<style>
+body{margin:0;background:#F6F6E9;color:#232323;font:16px/1.6 Arial,Helvetica,sans-serif}
+.page{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+h1{font:400 30px Georgia,serif;color:#457D58;margin:0 0 8px}
+h2{font:400 22px Georgia,serif;color:#457D58;margin:32px 0 8px}
+ol{padding-left:20px}li{margin-bottom:6px}
+button{font:600 16px Arial,sans-serif;background:#457D58;color:#F6F6E9;border:0;border-radius:999px;padding:12px 24px;cursor:pointer;margin:12px 0}
+.box{background:#fff;border:2px dashed #457D58;border-radius:8px;padding:24px;overflow-x:auto}
+</style>
+</head>
+<body><div class="page">
+<h1>La tua firma email</h1>
+<p>Clicca su "Seleziona la firma", copia (Ctrl+C oppure Cmd+C) e incollala in Gmail: Impostazioni &gt; Generali &gt; Firma. Le foto devono essere caricate sul sito perché si vedano ai destinatari.</p>
+
+<h2>Versione completa</h2>
+<button type="button" onclick="sel('sig1')">Seleziona la firma</button>
+<div class="box"><div id="sig1">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.5;color:#232323">
+<tr>
+<td valign="middle" style="padding:0 16px 0 0"><img src="https://assisto-segreteria.it/foto-maria.png" width="96" height="96" alt="Maria Calà" style="display:block;border:0;width:96px;height:96px"></td>
+<td width="3" style="width:3px;background-color:#457D58;font-size:1px;line-height:1px">&nbsp;</td>
+<td valign="middle" style="padding:0 0 0 16px">
+<div style="font-family:Georgia,'Times New Roman',serif;font-size:22px;line-height:1.2;color:#457D58">Maria Calà</div>
+<div style="font-size:13px;font-weight:bold;padding:2px 0 8px">Assisto &ndash; La tua segreteria a distanza</div>
+<div>T&nbsp; <a href="https://wa.me/393669720984" style="color:#232323;text-decoration:none">+39 366 972 0984</a></div>
+<div>E&nbsp; <a href="mailto:info@assisto-segreteria.it" style="color:#232323;text-decoration:none">info@assisto-segreteria.it</a></div>
+<div>W&nbsp; <a href="https://assisto-segreteria.it" style="color:#457D58;text-decoration:none;font-weight:bold">assisto-segreteria.it</a></div>
+</td></tr>
+<tr><td colspan="3" style="padding-top:14px"><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td height="4" style="height:4px;background-color:#457D58;font-size:1px;line-height:1px">&nbsp;</td></tr></table></td></tr>
+<tr><td colspan="3" style="padding-top:6px;font-size:11px;color:#555555">Italiano &middot; English &middot; Deutsch &nbsp;|&nbsp; P.IVA IT02881380840 &nbsp;|&nbsp; <a href="https://assisto-segreteria.it/privacy.html" style="color:#555555">Privacy</a></td></tr>
+</table>
+</div></div>
+
+<h2>Versione breve per le risposte</h2>
+<button type="button" onclick="sel('sig2')">Seleziona la firma</button>
+<div class="box"><div id="sig2">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.5;color:#232323">
+<tr><td width="3" style="width:3px;background-color:#457D58;font-size:1px">&nbsp;</td>
+<td style="padding-left:12px"><span style="font-family:Georgia,'Times New Roman',serif;font-size:16px;color:#457D58">Maria Calà</span> &nbsp;|&nbsp; Assisto &ndash; La tua segreteria a distanza<br>
+<a href="https://wa.me/393669720984" style="color:#232323;text-decoration:none">+39 366 972 0984</a> &nbsp;|&nbsp; <a href="https://assisto-segreteria.it" style="color:#457D58;text-decoration:none">assisto-segreteria.it</a></td></tr>
+</table>
+</div></div>
+
+<h2>Come usarla in Gmail</h2>
+<ol>
+<li>Carica <b>firma.html</b> e <b>foto-maria.png</b> nello stesso repository GitHub del sito e aspetta un paio di minuti.</li>
+<li>Apri <b>assisto-segreteria.it/firma.html</b>, premi "Seleziona la firma" e copia.</li>
+<li>In Gmail vai su Impostazioni &gt; Generali &gt; Firma &gt; Crea nuova, incolla e salva.</li>
+<li>Sotto "Impostazioni predefinite della firma" scegli la firma lunga per i nuovi messaggi e quella breve per risposte e inoltri.</li>
+</ol>
+</div>
+<script>
+function sel(id){var e=document.getElementById(id),r=document.createRange();r.selectNodeContents(e);var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy')}catch(x){}}
+</script>
+</body></html>
